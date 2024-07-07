@@ -23,5 +23,5 @@ void Dashboard::setup() {
 }
 void Dashboard::dump_config() {
   ESP_LOGCONFIG(TAG, "Web Server:");
-  ESP_LOGCONFIG(TAG, "  Address: %s:%u", esphome::network::get_ip_address().str().c_str(), base_->get_port());
+  ESP_LOGCONFIG(TAG, "  Address: %s:%u", esphome::network::get_ip_addresses().str().c_str(), base_->get_port());
 }
